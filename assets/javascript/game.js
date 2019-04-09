@@ -3,13 +3,44 @@
 
 /* random function between  1-12 set to each crystal*/
 
+//make an array of my jewels use a for loop to call each for loop use array to call my on click function
+
+//unbind
+
 var jewel1 = Math.floor(Math.random() * 12) + 1;
 var jewel2 = Math.floor(Math.random() * 12) + 1;
 var jewel3 = Math.floor(Math.random() * 12) + 1;
 var jewel4 = Math.floor(Math.random() * 12) + 1;
-var jewelx;
-var jewelxDisplay;
-var jewelNumber;
+
+
+
+// var jewelArr = [jewel1, jewel2, jewel3, jewel4];
+
+// for (var i = 0; i < jewelArr.length; i++) {
+
+//     jewelx.on("click", function () {
+//         score = score + jewelNumber;
+//         $("#score").html(score);
+//         jewelxDisplay.html(jewelNumber);
+//         console.log(score);
+
+//         if (score > magicNumber) {
+//             console.log("you lose");
+//             losses = losses + 1;
+//             $("#losses").html(losses);
+//             resetGame();
+
+//         }
+//         else if (score === magicNumber) {
+//             console.log("you win");
+//             wins = wins + 1;
+//             $("#wins").html(wins);
+//             resetGame();
+//         }
+
+
+//     }
+
 
 /* random function between 19- 120 set to magic number*/
 
@@ -41,7 +72,7 @@ function jewelClick(jewelx, jewelNumber, jewelxDisplay) {
             resetGame();
         }
 
-        return score;
+        // return score;
 
     })
 };
@@ -70,6 +101,20 @@ function resetGame() {
 
     score = 0;
     $("#score").html(score);
+
+    $("#jewel1").unbind("click");
+    $("#jewel2").unbind("click");
+    $("#jewel3").unbind("click");
+    $("#jewel4").unbind("click");
+
+    //recall all variables
+
+    jewelClick($("#jewel1"), jewel1, $("#jewel1Display"));
+    jewelClick($("#jewel2"), jewel2, $("#jewel2Display"));
+    jewelClick($("#jewel3"), jewel3, $("#jewel3Display"));
+    jewelClick($("#jewel4"), jewel4, $("#jewel4Display"));
+
+
 
 };
 

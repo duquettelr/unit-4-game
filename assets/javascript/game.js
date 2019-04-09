@@ -3,10 +3,10 @@
 
 /* random function between  1-12 set to each crystal*/
 
-var jewel1 = Math.floor(Math.random() * 12);
-var jewel2 = Math.floor(Math.random() * 12);
-var jewel3 = Math.floor(Math.random() * 12);
-var jewel4 = Math.floor(Math.random() * 12);
+var jewel1 = Math.floor(Math.random() * 12) + 1;
+var jewel2 = Math.floor(Math.random() * 12) + 1;
+var jewel3 = Math.floor(Math.random() * 12) + 1;
+var jewel4 = Math.floor(Math.random() * 12) + 1;
 var jewelx;
 var jewelxDisplay;
 var jewelNumber;

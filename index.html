@@ -1,0 +1,94 @@
+<!-- first random number must be between 1-12 -->
+<!-- large number must be between 19-120 -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+
+    <link rel="stylesheet" href="./assets/css/style.css">
+
+    <title>Crystal Counter</title>
+</head>
+
+<body>
+
+    <div class="jumbotron jumbotron-fluid">
+        <div class="container">
+            <h1 class="gameName">Crystal Counter</h1>
+            <ul class="lead">
+                <li>At the begening of the game you will be given a random magic number.</li>
+                <li>There are four crystals below, by clicking one of the crystals you will add a specific number of
+                    points to your score.</li>
+                <li>If you can match your score to the magic number, you win!</li>
+                <li>If your score goes over the magic number, you lose!</li>
+                <li>The value of each crystal is hidden until you click on it. The value of the crystals change each
+                    game.</li>
+            </ul>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <h2 class="magicNumber">Magic Number: <span id="magicNumber"><strong> </strong></span></h2>
+                <h2 class="yourScore">Your Score: <span id="score"><strong> </strong></span></h2>
+            </div>
+            <div class="col-md-6">
+                <h2 class="wins">Wins: <span id="wins"><strong></strong></span></h2>
+                <h2 class="losses">Losses: <span id="losses"><strong></strong></span></h2>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <img id="jewel1" src="./assets/images/Screenshot (12) - Copy.png" alt="jewel1">
+                <img id="jewel2" src="./assets/images/Screenshot (13) - Copy.png" alt="jewel2">
+                <img id="jewel3" src="./assets/images/Screenshot (14) - Copy.png" alt="jewel3">
+                <img id="jewel4" src="./assets/images/Screenshot (15) - Copy.png" alt="jewel4">
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3">
+                <h2 id="jewel1Display"></h2>
+            </div>
+            <div class="col-md-3">
+                <h2 id="jewel2Display"></h2>
+            </div>
+            <div class="col-md-3">
+                <h2 id="jewel3Display"></h2>
+            </div>
+            <div class="col-md-3">
+                <h2 id="jewel4Display"></h2>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+    <script src="./assets/javascript/game.js">
+
+
+
+
+
+
+    </script>
+</body>
+
+</html>
